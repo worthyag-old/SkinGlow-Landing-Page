@@ -4,55 +4,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
   <title>SkinGlow</title>
 </head>
 <body>
   <header id="header">
-    <img src="https://user-images.githubusercontent.com/89931577/135605151-a3348e9e-28cf-4b55-8782-9f08c1aa70f0.png" 
-    alt="Company logo" id="header-img">
     <nav id="nav-bar">
-      <a href="#benefits" class="nav-link">Benefits</a>
+      <a href="#benefits">
+        <img src="https://user-images.githubusercontent.com/89931577/135605151-a3348e9e-28cf-4b55-8782-9f08c1aa70f0.png" 
+        alt="Company logo" id="header-img">
+      </a>
+      <a href="#benefits-section" class="nav-link">Benefits</a>
       <a href="#tutorial" class="nav-link">Tutorial</a>
       <a href="#collection" class="nav-link">Collection</a>
       <a href="#packages" class="nav-link">Packages</a>
     </nav>
   </header>
   <main>
-  <section id="benefits">
+  <section id="benefits" class="benefits">
     <div id="form-section">
       <h1 id="benefits-title">Welcome to the <span class="set-apart">SkinGlow</span> Community</h1>
       <h4 id="slogan">Let's glow together ✨</h4>
-      <p id="prompt">Enter Your Email Below to Become an Official Member.</p>
+      <p id="prompt"><strong>Enter Your Email Below to Become an Official Member.</strong></p>
       <form action="https://www.freecodecamp.com/email-submit" id="form">
         <input type="email" id="email" placeholder="Enter your email address" name="email">
         <div><input class="input-btn" type="submit" id="submit" value="Join Now"></div>
       </form>
     </div>
-    <hr style="background-color: #dbd7d7;">
+    <!-- <hr style="background-color: #dbd7d7;"> -->
     <div id="benefits-section">
-      <div class="benefit">
-        <h2 class="benefit-over">A collection for everyone ✨</h2>
+      <div class="benefit" id="benefit-one">
+        <h2 class="benefit-over" id="benefit-over-first">A collection for everyone ✨</h2>
         <i class="fas fa-users"></i>
         <p class="benefit-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus consectetur saepe fugiat.</p>
       </div>
-      <hr>
-      <br>
-      <div class="benefit">
+      <div class="benefit" id="benefit-two">
         <h2 class="benefit-over">Quality products and ethical sources ✨</h2>
         <i class="fas fa-globe"></i>
         <p class="benefit-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus consectetur saepe fugiat.</p>
       </div>
-      <hr>
-      <br>
-      <div class="benefit">
+      <div class="benefit" id="benefit-three">
         <h2 class="benefit-over">What you think matters ✨</h2>
         <i class="fas fa-comments"></i>
         <p class="benefit-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus consectetur saepe fugiat.</p>
       </div>
-      <hr>
-      <br>
-      <div class="benefit">
+      <div class="benefit" id="benefit-four">
         <h2 class="benefit-over">Giving Back ✨</h2>
         <i class="fas fa-hands-helping"></i>
         <p class="benefit-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus consectetur saepe fugiat.</p>
@@ -184,5 +181,6 @@
     </div>
     <p style="font-size: 0.76em;">Copyright 2021, SkinGlow</p>
   </footer>
+  <div class="footer"><p>Webpage by <a href="https://github.com/worthyag">worthag</a></p></div>
 </body>
 </html>

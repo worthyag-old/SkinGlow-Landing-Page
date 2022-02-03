@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@300;400&family=Pacifico&display=swap');
+* {
+  overflow-x: hidden;
+}
 
 body, input {
   font-family: 'Montserrat', sans-serif;
   color: #202020;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  height: 10vh;
+  /* height: 10vh; */
   position: fixed;
   width: 100%;
   top: 0;
   display: flex;
-  background-color: #ffffff;
-  z-index: 99;
+  background-color: #ffffff00;
+  /* z-index: 99; */
 }
 
 #header-img {
@@ -52,6 +58,11 @@ hr {
   border: none;
 }
 
+.benefits h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
 #tutorial, #collection {
   margin-top: 25em;
   height: 80vh;
@@ -63,58 +74,90 @@ hr {
 }
 
 #form-section {
-  margin-bottom: 5em;
-}
-
-#benefits {
-  text-align: center;
+  /* margin-bottom: 5em; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.35)), url("https://images.pexels.com/photos/8433526/pexels-photo-8433526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: 10% 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #benefits-section {
-  margin-top: 5em;
-}
-
-#benefits-section img {
-  width: 50%;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.95)), url("https://images.pexels.com/photos/8433526/pexels-photo-8433526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: 80% 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px; 
 }
 
 .benefit {
-  margin: 0 10em 1em 10em;
+  /* margin: 0 10em 1em 10em; */
+  width: 280px;
+  height: 280px;
+  border: solid 2px #fff; 
+  display: flex;
+  flex-direction: column;
+  border-radius: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.842);
+  box-shadow: 0 0 10px 5px rgb(184, 181, 151);
 }
 
-.benefit-img {
+.benefit:hover {
+  box-shadow: 0 0 10px 10px rgb(153, 151, 127);
+}
+
+/* .benefit-img {
   transform: scale(0.1);
   margin-top: 0;
-}
+} */
 
 .benefit-over {
   margin-bottom: 0.2em;
-  font-family: 'Cookie', cursive;
-  font-size: 2.4em;
+  /* font-family: 'Cookie', cursive; */
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
   color: #202020;
+  width: 65%;
+  margin: 0 auto;
 }
 
 .benefit-info {
-  margin-top: 1.2em;
+  /* margin-top: 1.2em; */
+  font-size: 0.9em;
+  width: 90%;
+  margin: 0 auto;
 }
 
 i {
   color: #ff73c0;
   z-index: 9;
-  transform: scale(5);
-  margin: 3em 0 2em 0;
+  transform: scale(2);
+  margin: 2em 0 2em 0;
 }
 
 #email {
   width: 30%;
   padding: 5px;
-  border: 2px solid #ffe54d;
+  border: 3px solid #ffe54d;
+  background-color: #fff !important;
 }
 
 #slogan {
-  font-size: 1.6em;
+  font-size: 2.2em;
   font-family: 'Cookie', cursive;
-  color: #6adbc6;
+  color: #4cb3a0;
 }
 
 .input-btn {
@@ -133,12 +176,15 @@ i {
 }
 
 #tutorial {
-  text-align: center;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
 }
 
 .set-apart {
   color: #ff73c0;
-  font-size: 1.4em;
+  /* font-size: 1.4em; */
   font-family: 'Pacifico', cursive;
 }
 
@@ -180,7 +226,7 @@ i {
 }
 
 #collection {
-  text-align: center;
+  height: 100vh;
 }
 
 #the-collections {
@@ -217,6 +263,7 @@ i {
 
 #packages {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 #the-packages {
@@ -271,10 +318,24 @@ i {
   position: fixed;
   bottom: 0;
   right: 0;
-  background-color: #20202010;
+  background-color: #20202070;
+  color: #fff;
   text-align: right;
   padding-right: 0.2em;
   font-size: 0.8em;
+}
+
+#footer a {
+  color: #fff;
+}
+
+.footer {
+  font-size: 10px;
+}
+
+.footer a {
+  text-decoration: underline;
+  color: #cc46c5;
 }
 
 .footer-link::before, .footer-link::after {
